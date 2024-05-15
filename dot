@@ -1,0 +1,18 @@
+import turtle 
+# Set up the turtle screen 
+screen = turtle.Screen() 
+screen.bgcolor("white") 
+# Create a turtle object 
+t = turtle.Turtle() 
+# Set turtle properties 
+t.pencolor("black") 
+t.speed(1)  # Set the drawing speed (1 is slowest, fastest is 0) 
+# Draw a dot at the current position 
+t.dot(10, "black")  # Specify the dot size and color 
+# Move the turtle to a new position and draw another dot 
+t.penup()  # Lift the pen up 
+t.forward(50)  # Move forward by 50 units 
+t.pendown()  # Put the pen down  
+t.dot(20, "red")  # Draw a larger red dot 
+# Keep the window open until it's manually closed
+turtle.done()
